@@ -1,0 +1,82 @@
+body {
+    padding-bottom: 500px;
+}
+
+/*Containers*/
+.container {
+    background-color: #eee;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+
+    /*FlexBox*/
+    display:flex;
+    /*Alinamento Horizontal eixo X*/
+    /*justify-content: center;*/
+    justify-content: space-around;
+    justify-content: space-between;
+
+    /*Alinhamento Vertical eixo Y*/
+    align-items: center;
+
+    /*Quebra de linhas*/
+    flex-wrap: wrap;
+}
+
+
+.item   {
+   background-color: #ccc;
+   border: 2px solid blue;
+   height: 50px;
+   width: 50px; 
+}
+
+
+/*Itens*/
+.box   {
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px; 
+    flex-basis: 30px;
+ }
+
+ #item-1 {
+    /*Tamanho que o elemento cresce*/
+    flex-grow: 2;
+
+    /*Tamanho que o elemento diminui*/
+    flex-shrink: 1;
+
+    /*shorthand para item
+    os tres valores do flex item:
+    grow, shrink e basis
+    em um unico paramentro
+    flex: 1 1 50px
+    GROW SHRINK BASIS
+    */
+
+ }
+
+ #item-2,
+ #item-3 {
+    flex-grow: 1;
+ }
+
+ #item-2 {
+    /*tamanho minimo do elemento*/
+    flex-basis: 100px;
+ }
+
+ /*alterar a ordem dos elementos*/
+ #item-1 {
+    order: 3;
+ }
+
+ #item-2 {
+    order: 2;
+ }
+
+ #item-3 {
+    order: 1;
+ }
